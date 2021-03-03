@@ -29,7 +29,7 @@ hi! link jsModuleKeywords Statement
 hi! link jsModuleOperators Statement
 hi! link jsNull Constant
 hi! link jsObjectFuncName Function
-hi! link jsObjectKey Title
+hi! link jsObjectKey Special
 hi! link jsSuper Include
 hi! link jsTemplateBraces Special
 hi! link jsUndefined Constant
@@ -45,8 +45,8 @@ hi! link jsObjectShorthandProp Title
 hi! link jsGlobalObjects Constant
 hi! link jsModuleKeyword Title
 hi! link jsClassStringKey Title
-hi! link jsObjectKeyComputed Title
-hi! link jsObjectValue Title
+hi! link jsObjectKeyComputed Typedef
+hi! link jsObjectValue Typedef
 hi! link jsBlockLabel Label
 hi! link jsBlockLabelKey Title
 
@@ -72,8 +72,8 @@ hi! link jsBlockLabelKey Title
 "hi CTagsClass -- no settings --
 "hi TabLine -- no settings --
 "hi clear -- no settings --
-hi Normal guifg=#ffffff guibg=#241e27 guisp=#241e27 gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
-hi SignColumn guifg=#ffffff guibg=#241e27 guisp=#241e27 gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
+hi Normal guifg=#ffffff guibg=#241e27 guisp=NONE gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
+hi SignColumn guifg=#ffffff guibg=#241e27 guisp=NONE gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
 hi CursorLine guifg=NONE guibg=#613F73 guisp=NONE gui=NONE ctermfg=248 ctermbg=122 cterm=NONE
 hi ColorColumn guifg=NONE guibg=#613F73 guisp=NONE gui=NONE ctermfg=248 ctermbg=122 cterm=NONE
 hi IncSearch guifg=#ffffff guibg=#eb0095 guisp=#eb0095 gui=bold ctermfg=15 ctermbg=162 cterm=bold
@@ -116,7 +116,7 @@ hi ModeMsg guifg=#e8b9ff guibg=NONE guisp=NONE gui=NONE ctermfg=183 ctermbg=NONE
 hi Define guifg=#6e9cf8 guibg=NONE guisp=NONE gui=NONE ctermfg=69 ctermbg=NONE cterm=NONE
 hi Function guifg=#40ff73 guibg=NONE guisp=NONE gui=bold,NONE ctermfg=84 ctermbg=NONE cterm=bold,NONE
 hi FoldColumn guifg=#e4adff guibg=#2e2e2e guisp=#2e2e2e gui=NONE ctermfg=183 ctermbg=236 cterm=NONE
-hi PreProc guifg=#ff00a2 guibg=NONE guisp=NONE gui=NONE ctermfg=69 ctermbg=NONE cterm=NONE
+hi PreProc guifg=#ff00a2 guibg=NONE guisp=NONE gui=italic ctermfg=69 ctermbg=NONE cterm=italic
 hi Visual guifg=#ffffff guibg=#794e8f guisp=#794e8f gui=NONE ctermfg=15 ctermbg=96 cterm=NONE
 hi MoreMsg guifg=#e8b9ff guibg=NONE guisp=NONE gui=NONE ctermfg=183 ctermbg=NONE cterm=NONE
 hi VertSplit guifg=#241e27 guibg=#241e27 guisp=#241e27 gui=NONE ctermfg=235 ctermbg=235 cterm=NONE
