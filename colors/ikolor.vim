@@ -100,7 +100,7 @@ hi LineNr guifg=#85579c guibg=#241e27 guisp=#241e27 gui=NONE ctermfg=97 ctermbg=
 hi StatusLine guifg=#f5edf5 guibg=#523e5e guisp=#523e5e gui=NONE ctermfg=255 ctermbg=59 cterm=NONE
 hi Label guifg=#ff8bb2 guibg=NONE guisp=NONE gui=NONE ctermfg=211 ctermbg=NONE cterm=NONE
 hi PMenuSel guifg=#ffffff guibg=#8b48a8 guisp=#8b48a8 gui=NONE ctermfg=15 ctermbg=97 cterm=NONE
-hi Search guifg=#d90000 guibg=#ffffff guisp=#ffffff gui=bold ctermfg=160 ctermbg=15 cterm=bold
+hi Search guifg=#d90000 guibg=#ffffff guisp=NONE gui=bold ctermfg=160 ctermbg=15 cterm=bold
 hi Delimiter guifg=#ff9dd1 guibg=NONE guisp=NONE gui=NONE ctermfg=218 ctermbg=NONE cterm=NONE
 hi Statement guifg=#cc8aff guibg=NONE guisp=NONE gui=NONE ctermfg=177 ctermbg=NONE cterm=NONE
 hi Comment guifg=#8a8a8a guibg=NONE guisp=NONE gui=italic ctermfg=245 ctermbg=NONE cterm=italic
@@ -165,3 +165,10 @@ autocmd! Syntax python :syntax keyword PreProc self
 highlight GitGutterAdd    guifg=#40ff73 gui=bold ctermfg=2
 highlight GitGutterChange guifg=#d3ff0f gui=bold ctermfg=226
 highlight GitGutterDelete guifg=#ff5555 gui=bold ctermfg=1
+
+if exists("g:ikolor_transparent") && g:ikolor_transparent
+	hi Normal guibg=NONE ctermbg=NONE
+	hi SignColumn guibg=NONE cterm=NONE
+	hi ColorColumn guibg=NONE cterm=NONE
+	hi LineNr guibg=NONE cterm=NONE
+endif
