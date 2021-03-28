@@ -14,92 +14,51 @@ endif
 
 let g:colors_name = "ikolor"
 
-hi! link EndOfBuffer NonText
-hi! link QuickFixLine Search
-hi! link Boolean Constant
-hi! link Character Constant
-hi! link Conditional Statement
-hi! link Define PreProc
-hi! link Debug Special
-hi! link Delimiter Special
-hi! link Exception Statement
-hi! link Float Number
-hi! link Function Identifier
-hi! link Keyword Statement
-hi! link Label Statement
-hi! link Macro PreProc
-hi! link Number Constant
-hi! link Operator Statement
-hi! link PreCondit PreProc
-hi! link Repeat Statement
-hi! link SpecialChar Special
-hi! link SpecialComment Special
-hi! link StorageClass Type
-hi! link Structure Type
-hi! link Tag Special
-hi! link Typedef Type
-hi! link lCursor Cursor
 hi! link jsFlowMaybe Normal
 hi! link jsFlowObject Normal
 hi! link jsFlowType PreProc
 hi! link jsClassDefinition Normal
-hi! link jsClassFuncName Title
+hi! link jsClassFuncName Function
 hi! link jsImport Include
 hi! link jsExport Include
 hi! link jsFrom PreProc
-hi! link jsFuncName Identifier
+hi! link jsFuncName Function
 hi! link jsFutureKeys Statement
-hi! link jsFuncCall Identifier
+hi! link jsFuncCall Function
 hi! link jsModuleKeywords Statement
 hi! link jsModuleOperators Statement
 hi! link jsNull Constant
-hi! link jsObjectFuncName Identifier
-hi! link jsObjectKey Title
-hi! link jsSuper Statement
+hi! link jsObjectFuncName Function
+hi! link jsObjectKey Special
+hi! link jsSuper Include
 hi! link jsTemplateBraces Special
 hi! link jsUndefined Constant
-hi! link jsFunction PreProc
+hi! link jsFunction Statement
 hi! link jsThis Constant
 hi! link jsStorageClass PreProc
-hi! link jsVariableDef Title
+hi! link jsVariableDef Normal
 hi! link jsAsyncKeyword Title
-hi! link jsFuncArgs Title
-hi! link jsArrowFuncArgs Title
-hi! link jsArrowFunction PreProc
+hi! link jsFuncArgs SpecialKey
+hi! link jsArrowFuncArgs SpecialKey
+hi! link jsArrowFunction Function
 hi! link jsObjectShorthandProp Title
 hi! link jsGlobalObjects Constant
 hi! link jsModuleKeyword Title
 hi! link jsClassStringKey Title
-hi! link jsObjectKeyComputed Title
-hi! link jsObjectValue Title
-hi! link jsBlockLabel Title
+hi! link jsObjectKeyComputed Typedef
+hi! link jsObjectValue Typedef
+hi! link jsBlockLabel Label
 hi! link jsBlockLabelKey Title
-hi! link rubyClass PreProc
-hi! link rubyConstant Constant
-hi! link rubyInstanceVariable Title
-hi! link rubyInterpolationDelimiter Identifier
-hi! link rubyModule Statement
-hi! link rubyFunction Identifier
-hi! link rubyInclude Include
-hi! link markdownBold Special
-hi! link markdownCode String
-hi! link markdownCodeDelimiter String
-hi! link markdownHeadingDelimiter Comment
-hi! link markdownRule Comment
 
 "hi SignColumn -- no settings --
 "hi TabLineSel -- no settings --
 "hi CTagsMember -- no settings --
 "hi CTagsGlobalConstant -- no settings --
 "hi Ignore -- no settings --
-hi Normal guifg=#ffffff guibg=#241e27 guisp=#241e27 gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
-hi SignColumn guifg=#ffffff guibg=#241e27 guisp=#241e27 gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
 "hi CTagsImport -- no settings --
 "hi CTagsGlobalVariable -- no settings --
 "hi SpellRare -- no settings --
 "hi EnumerationValue -- no settings --
-hi CursorLine guifg=NONE guibg=#613F73 guisp=NONE gui=NONE ctermfg=248 ctermbg=122 cterm=NONE
-hi ColorColumn guifg=NONE guibg=#613F73 guisp=NONE gui=NONE ctermfg=248 ctermbg=122 cterm=NONE
 "hi Union -- no settings --
 "hi TabLineFill -- no settings --
 "hi VisualNOS -- no settings --
@@ -113,6 +72,10 @@ hi ColorColumn guifg=NONE guibg=#613F73 guisp=NONE gui=NONE ctermfg=248 ctermbg=
 "hi CTagsClass -- no settings --
 "hi TabLine -- no settings --
 "hi clear -- no settings --
+hi Normal guifg=#ffffff guibg=#241e27 guisp=NONE gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
+hi SignColumn guifg=#ffffff guibg=#241e27 guisp=NONE gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
+hi CursorLine guifg=NONE guibg=#613F73 guisp=NONE gui=NONE ctermfg=248 ctermbg=122 cterm=NONE
+hi ColorColumn guifg=NONE guibg=#613F73 guisp=NONE gui=NONE ctermfg=248 ctermbg=122 cterm=NONE
 hi IncSearch guifg=#ffffff guibg=#eb0095 guisp=#eb0095 gui=bold ctermfg=15 ctermbg=162 cterm=bold
 hi WildMenu guifg=#ffffff guibg=#996eaf guisp=#996eaf gui=NONE ctermfg=15 ctermbg=97 cterm=NONE
 hi SpecialComment guifg=#ff9dd1 guibg=NONE guisp=NONE gui=NONE ctermfg=218 ctermbg=NONE cterm=NONE
@@ -137,7 +100,7 @@ hi LineNr guifg=#85579c guibg=#241e27 guisp=#241e27 gui=NONE ctermfg=97 ctermbg=
 hi StatusLine guifg=#f5edf5 guibg=#523e5e guisp=#523e5e gui=NONE ctermfg=255 ctermbg=59 cterm=NONE
 hi Label guifg=#ff8bb2 guibg=NONE guisp=NONE gui=NONE ctermfg=211 ctermbg=NONE cterm=NONE
 hi PMenuSel guifg=#ffffff guibg=#8b48a8 guisp=#8b48a8 gui=NONE ctermfg=15 ctermbg=97 cterm=NONE
-hi Search guifg=#d90000 guibg=#ffffff guisp=#ffffff gui=bold ctermfg=160 ctermbg=15 cterm=bold
+hi Search guifg=#d90000 guibg=#ffffff guisp=NONE gui=bold ctermfg=160 ctermbg=15 cterm=bold
 hi Delimiter guifg=#ff9dd1 guibg=NONE guisp=NONE gui=NONE ctermfg=218 ctermbg=NONE cterm=NONE
 hi Statement guifg=#cc8aff guibg=NONE guisp=NONE gui=NONE ctermfg=177 ctermbg=NONE cterm=NONE
 hi Comment guifg=#8a8a8a guibg=NONE guisp=NONE gui=italic ctermfg=245 ctermbg=NONE cterm=italic
@@ -153,7 +116,7 @@ hi ModeMsg guifg=#e8b9ff guibg=NONE guisp=NONE gui=NONE ctermfg=183 ctermbg=NONE
 hi Define guifg=#6e9cf8 guibg=NONE guisp=NONE gui=NONE ctermfg=69 ctermbg=NONE cterm=NONE
 hi Function guifg=#40ff73 guibg=NONE guisp=NONE gui=bold,NONE ctermfg=84 ctermbg=NONE cterm=bold,NONE
 hi FoldColumn guifg=#e4adff guibg=#2e2e2e guisp=#2e2e2e gui=NONE ctermfg=183 ctermbg=236 cterm=NONE
-hi PreProc guifg=#ff00a2 guibg=NONE guisp=NONE gui=NONE ctermfg=69 ctermbg=NONE cterm=NONE
+hi PreProc guifg=#ff00a2 guibg=NONE guisp=NONE gui=italic ctermfg=69 ctermbg=NONE cterm=italic
 hi Visual guifg=#ffffff guibg=#794e8f guisp=#794e8f gui=NONE ctermfg=15 ctermbg=96 cterm=NONE
 hi MoreMsg guifg=#e8b9ff guibg=NONE guisp=NONE gui=NONE ctermfg=183 ctermbg=NONE cterm=NONE
 hi VertSplit guifg=#241e27 guibg=#241e27 guisp=#241e27 gui=NONE ctermfg=235 ctermbg=235 cterm=NONE
@@ -202,3 +165,10 @@ autocmd! Syntax python :syntax keyword PreProc self
 highlight GitGutterAdd    guifg=#40ff73 gui=bold ctermfg=2
 highlight GitGutterChange guifg=#d3ff0f gui=bold ctermfg=226
 highlight GitGutterDelete guifg=#ff5555 gui=bold ctermfg=1
+
+if exists("g:ikolor_transparent") && g:ikolor_transparent
+	hi Normal guibg=NONE ctermbg=NONE
+	hi SignColumn guibg=NONE cterm=NONE
+	hi ColorColumn guibg=NONE cterm=NONE
+	hi LineNr guibg=NONE cterm=NONE
+endif
