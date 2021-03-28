@@ -30,5 +30,6 @@ let g:airline#themes#ikolor#palette.tabline = {
             \'airline_tabsel': ['#ffffff', '#5f0087', 255, 54],
             \'airline_tabtype': ['#ffffff', '#00af00', 255, 34],
             \'airline_tabfill': ['#767676', 'transparent', 243, 255],
-            \'airline_tabmod': ['#ffffff', '#ffaf5f', 255, 243]}
+            \'airline_tabmod': ['#ffffff', '#ffaf5f', 255, 243],
+            \'airline_tabmod_unsel': ['#000000', '#e5c884', 255, 243]}
 
