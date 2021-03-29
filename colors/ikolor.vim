@@ -72,6 +72,7 @@ hi! link jsBlockLabelKey Title
 "hi CTagsClass -- no settings --
 "hi TabLine -- no settings --
 "hi clear -- no settings --
+hi CursorLineNr guibg=NONE guifg=#f4f401 guisp=NONE gui=bold ctermfg=248 ctermbg=122 cterm=NONE
 hi Normal guifg=#ffffff guibg=#241e27 guisp=NONE gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
 hi SignColumn guifg=#ffffff guibg=#241e27 guisp=NONE gui=NONE ctermfg=15 ctermbg=235 cterm=NONE
 hi CursorLine guifg=NONE guibg=#613F73 guisp=NONE gui=NONE ctermfg=248 ctermbg=122 cterm=NONE
@@ -102,7 +103,7 @@ hi Label guifg=#ff8bb2 guibg=NONE guisp=NONE gui=NONE ctermfg=211 ctermbg=NONE c
 hi PMenuSel guifg=#ffffff guibg=#8b48a8 guisp=#8b48a8 gui=NONE ctermfg=15 ctermbg=97 cterm=NONE
 hi Search guifg=#d90000 guibg=#ffffff guisp=NONE gui=bold ctermfg=160 ctermbg=15 cterm=bold
 hi Delimiter guifg=#ff9dd1 guibg=NONE guisp=NONE gui=NONE ctermfg=218 ctermbg=NONE cterm=NONE
-hi Statement guifg=#cc8aff guibg=NONE guisp=NONE gui=NONE ctermfg=177 ctermbg=NONE cterm=NONE
+hi Statement guifg=#cc8aff guibg=NONE guisp=NONE gui=italic ctermfg=177 ctermbg=NONE cterm=NONE
 hi Comment guifg=#8a8a8a guibg=NONE guisp=NONE gui=italic ctermfg=245 ctermbg=NONE cterm=italic
 hi Character guifg=#e4ff8b guibg=NONE guisp=NONE gui=NONE ctermfg=192 ctermbg=NONE cterm=NONE
 hi Float guifg=#f48c6a guibg=NONE guisp=NONE gui=NONE ctermfg=228 ctermbg=NONE cterm=NONE
@@ -162,6 +163,10 @@ hi doxygencomment guifg=#bdff2f guibg=NONE guisp=NONE gui=NONE ctermfg=154 cterm
 hi cspecialcharacter guifg=#ff9dd1 guibg=#404040 guisp=#404040 gui=NONE ctermfg=218 ctermbg=238 cterm=NONE
 
 autocmd! Syntax python :syntax keyword PreProc self
+hi pythonFunction guifg=#ffd36d gui=bold
+hi pythonDottedName guifg=#ff708a gui=italic
+hi pythonfunctioncall guifg=#40ff73 gui=bold
+hi pythonBuiltinFunc guifg=#fd7c15 gui=bold,italic
 highlight GitGutterAdd    guifg=#40ff73 gui=bold ctermfg=2
 highlight GitGutterChange guifg=#d3ff0f gui=bold ctermfg=226
 highlight GitGutterDelete guifg=#ff5555 gui=bold ctermfg=1
